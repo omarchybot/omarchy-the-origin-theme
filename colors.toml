@@ -1,0 +1,35 @@
+# The Origin: cold steel palette sampled from the vortex painting.
+mode = "dark"
+
+accent = "#a9b8cc"
+selection = "#303847"
+muted = "#6d7885"
+
+background = "#08090c"
+dark_background = "#06070a"
+darker_background = "#040507"
+lighter_background = "#1b1e25"
+
+foreground = "#c3c8d0"
+dark_foreground = "#515e6e"
+light_foreground = "#dfe3ea"
+bright_foreground = "#f2f4f7"
+
+red = "#b07f89"
+yellow = "#c2b594"
+orange = "#b89a82"
+green = "#8fa89a"
+cyan = "#86aabb"
+blue = "#7f98ba"
+magenta = "#9d8fb8"
+brown = "#6a625c"
+
+bright_red = "#c796a0"
+bright_yellow = "#d6cbad"
+bright_green = "#a8bfb1"
+bright_cyan = "#a0c0cf"
+bright_blue = "#9ab0cf"
+bright_magenta = "#b5a8cc"
+
+hyprland_active_border = "rgba(515e6eee) rgba(dfe6f0ee) 45deg"
+hyprland_inactive_border = "rgba(1b1e25aa)"

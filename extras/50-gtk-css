@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Link the current theme's gtk.css into GTK 3 and 4, or remove the link when the
+# theme has none. Omarchy itself only sets Adwaita-dark and the icon theme.
+
+THEME_GTK_CSS="$HOME/.local/state/omarchy/current/theme/gtk.css"
+
+for dir in "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-4.0"; do
+  target="$dir/gtk.css"
+
+  # Never clobber a real gtk.css the user wrote by hand.
+  [[ -e $target && ! -L $target ]] && continue
+
+  if [[ -f $THEME_GTK_CSS ]]; then
+    mkdir -p "$dir"
+    ln -sfn "$THEME_GTK_CSS" "$target"
+  else
+    rm -f "$target"
+  fi
+done
